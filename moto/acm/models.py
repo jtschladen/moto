@@ -18,11 +18,8 @@ from moto.core.common_models import BaseModel
 from moto.core.serialize import parse_to_aware_datetime
 from moto.core.utils import utcnow
 
-from .exceptions import (
-    AWSTooManyTagsException,
-    AWSValidationException,
-    CertificateNotFound,
-)
+from .exceptions import (AWSTooManyTagsException, AWSValidationException,
+                         CertificateNotFound)
 from .utils import make_arn_for_certificate
 
 AWS_ROOT_CA = b"""-----BEGIN CERTIFICATE-----
